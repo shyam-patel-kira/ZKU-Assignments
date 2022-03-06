@@ -34,4 +34,4 @@ template merkleProof(levels) {
   root <== levels > 0 ? layers[0].outs[0] : leaves[0];
 }
 
-component main = merkleProof(3);
+component main{public [leaves]} = merkleProof(3);
