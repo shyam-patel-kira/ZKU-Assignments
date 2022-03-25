@@ -10,8 +10,8 @@
 //      added requiere error messages
 //
 //
-// SPDX-License-Identifier: GPL-3.0
-pragma solidity ^0.8.0;
+// SPDX-License-Identiier: GPL-3.0
+pragma solidity ^0.8.3;
 library Pairing {
     struct G1Point {
         uint X;
