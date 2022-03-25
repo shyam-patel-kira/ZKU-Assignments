@@ -7,12 +7,12 @@ void MiMCFeistel_0_create(uint soffset,uint coffset,Circom_CalcWit* ctx,std::str
 void MiMCFeistel_0_run(uint ctx_index,Circom_CalcWit* ctx);
 void MiMCSponge_1_create(uint soffset,uint coffset,Circom_CalcWit* ctx,std::string componentName,uint componentFather);
 void MiMCSponge_1_run(uint ctx_index,Circom_CalcWit* ctx);
-void CommitCard_2_create(uint soffset,uint coffset,Circom_CalcWit* ctx,std::string componentName,uint componentFather);
-void CommitCard_2_run(uint ctx_index,Circom_CalcWit* ctx);
+void CardCommit_2_create(uint soffset,uint coffset,Circom_CalcWit* ctx,std::string componentName,uint componentFather);
+void CardCommit_2_run(uint ctx_index,Circom_CalcWit* ctx);
 Circom_TemplateFunction _functionTable[3] = { 
 MiMCFeistel_0_run,
 MiMCSponge_1_run,
-CommitCard_2_run };
+CardCommit_2_run };
 uint get_main_input_signal_start() {return 3;}
 
 uint get_main_input_signal_no() {return 4;}
@@ -1527,13 +1527,13 @@ uint sub_component_aux;
 PFrElement aux_dest = &lvar[0];
 // load src
 // end load src
-Fr_copy(aux_dest,&circuitConstants[0]);
+Fr_copy(aux_dest,&circuitConstants[3]);
 }
 {
 PFrElement aux_dest = &lvar[1];
 // load src
 // end load src
-Fr_copy(aux_dest,&circuitConstants[3]);
+Fr_copy(aux_dest,&circuitConstants[0]);
 }
 {
 PFrElement aux_dest = &lvar[2];
@@ -1662,9 +1662,9 @@ Fr_copy(aux_dest,&circuitConstants[1]);
 }
 }
 
-void CommitCard_2_create(uint soffset,uint coffset,Circom_CalcWit* ctx,std::string componentName,uint componentFather){
+void CardCommit_2_create(uint soffset,uint coffset,Circom_CalcWit* ctx,std::string componentName,uint componentFather){
 ctx->componentMemory[coffset].templateId = 2;
-ctx->componentMemory[coffset].templateName = "CommitCard";
+ctx->componentMemory[coffset].templateName = "CardCommit";
 ctx->componentMemory[coffset].signalStart = soffset;
 ctx->componentMemory[coffset].inputCounter = 4;
 ctx->componentMemory[coffset].componentName = componentName;
@@ -1672,7 +1672,7 @@ ctx->componentMemory[coffset].idFather = componentFather;
 ctx->componentMemory[coffset].subcomponents = new uint[1];
 }
 
-void CommitCard_2_run(uint ctx_index,Circom_CalcWit* ctx){
+void CardCommit_2_run(uint ctx_index,Circom_CalcWit* ctx){
 FrElement* signalValues = ctx->signalValues;
 u64 mySignalStart = ctx->componentMemory[ctx_index].signalStart;
 std::string myTemplateName = ctx->componentMemory[ctx_index].templateName;
@@ -1690,15 +1690,15 @@ uint aux_create = 0;
 int aux_cmp_num = 0+ctx_index+1;
 uint csoffset = mySignalStart+6;
 for (uint i = 0; i < 1; i++) {
-std::string new_cmp_name = "digest";
+std::string new_cmp_name = "saltDigest";
 mySubcomponents[aux_create+i] = aux_cmp_num;
 MiMCSponge_1_create(csoffset,aux_cmp_num,ctx,new_cmp_name,myId);
 csoffset += 2654 ;
 aux_cmp_num += 4;
 }
 }
-Fr_eq(&expaux[0],&signalValues[mySignalStart + 2],&signalValues[mySignalStart + 4]); // line circom 19
-if (!Fr_isTrue(&expaux[0])) std::cout << "Failed assert in template " << myTemplateName << " line 19. " <<  "Followed trace: " << ctx->getTrace(myId) << std::endl;
+Fr_eq(&expaux[0],&signalValues[mySignalStart + 2],&signalValues[mySignalStart + 4]); // line circom 23
+if (!Fr_isTrue(&expaux[0])) std::cout << "Failed assert in template " << myTemplateName << " line 23. " <<  "Followed trace: " << ctx->getTrace(myId) << std::endl;
 assert(Fr_isTrue(&expaux[0]));
 {
 uint cmp_index_ref = 0;
@@ -1760,7 +1760,7 @@ Fr_copy(aux_dest,&signalValues[mySignalStart + 4]);
 }
 
 void run(Circom_CalcWit* ctx){
-CommitCard_2_create(1,0,ctx,"main",0);
-CommitCard_2_run(0,ctx);
+CardCommit_2_create(1,0,ctx,"main",0);
+CardCommit_2_run(0,ctx);
 }
 
