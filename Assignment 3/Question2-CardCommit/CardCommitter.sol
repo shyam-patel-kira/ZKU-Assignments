@@ -1,7 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import "./Verifier.sol";
+/// @author Shyam Patel
+import "./verifier.sol";
 
 /// @title Card commitment contract.
 /// @dev A contract that allows users to commit to sequences of unique cards in the same suit.

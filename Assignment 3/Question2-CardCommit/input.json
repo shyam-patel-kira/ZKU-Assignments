@@ -1,6 +1,6 @@
 {
-    "previousCardSuite": "3",
-    "cardNumber" : "10",
-    "cardSuite": "3",
-    "salt": "2537289271928752957294902"
+    "previousCardSuit": "2",
+    "card" : "7",
+    "cardSuit": "2",
+    "salt": "2315436546876745634352351"
 }
