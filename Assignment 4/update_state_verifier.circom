@@ -7,12 +7,32 @@ include "./helpers/balance_leaf.circom";
 include "./helpers/get_merkle_root.circom";
 include "./helpers/if_gadgets.circom";
 
+// SNARK circuit to proof transactions are done correctly
+// For each transaction, it verifies,
+//     transaction check:
+//         - transactions existence check: check that transaction exists in the tx_root
+//         - transactions signature check: check that transaction is signed by sender
+//     sender check:
+//         - sender account existence check: check that sender account exists in current_state
+//         - balance underflow check: check that sender has sufficient balance to send transaction
+//     sender update check:
+//         - sender state update: decrement sender balance and increase sender nonce
+//         - intermediate root update: update current_state with new sender leaf to get intermediate_root_1
+//     receiver check:
+//         - receiver account existence check: check that receiver account exists in intermediate_root_1
+//     receiver update check:
+//         - receiver state update: increment receiver balance
+//         - intermediate root update: update intermediate_root_1 with new receiver leaf to get intermediate_root_2
 
 template Main(n,m) {
 // n is depth of balance tree
 // m is depth of transactions tree
 // for each proof, update 2**m transactions
 
+    // Public inputs and output:
+    // @param tx_root: Merkle root of a tree of transactions sent to the coordinator
+    // @param current_state: Merkle root of old Accounts tree   
+    // @param out: Merkle root of updated Accounts tree
     // Merkle root of transactions tree
     signal input txRoot;
 
@@ -68,6 +88,9 @@ template Main(n,m) {
     var NONCE_MAX_VALUE = 100;
 
     // constant zero address
+    // There is a special transaction where the receiver is the zero_leaf. 
+    // We consider these to be withdraw transactions and do not change 
+    // the balance and nonce of the zero_leaf.
                          
     var ZERO_ADDRESS_X = 0;
     var ZERO_ADDRESS_Y = 0;
