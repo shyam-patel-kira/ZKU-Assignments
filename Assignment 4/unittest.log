@@ -1,0 +1,984 @@
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 11 tests
+test report_collector::metrics_collector::tests::histogram_item_addition ... ok
+test report_collector::metrics_collector::tests::histogram_percentile ... ok
+test report_collector::metrics_collector::tests::histogram_ranges ... ok
+test report_collector::metrics_collector::tests::histogram_window_size ... ok
+test corrupted_tx::tests::bad_zksync_signature ... ok
+test corrupted_tx::tests::bad_eth_signature ... ok
+test corrupted_tx::tests::not_packable_amount ... ok
+test corrupted_tx::tests::zero_fee ... ok
+test corrupted_tx::tests::too_big_amount ... ok
+test corrupted_tx::tests::nonexistent_token ... ok
+test corrupted_tx::tests::not_packable_fee ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.11s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 4 tests
+test utils::tests::test_private_key_from_seed_too_short ... ok
+test utils::tests::test_zero_conversion ... ok
+test utils::tests::test_biguint_u256_conversion ... ok
+test utils::tests::test_biguint_with_msb_conversion ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 5 tests
+test batch_transfer ... ignored
+test comprehensive_test ... ignored
+test full_exit_test ... ignored
+test nft_test ... ignored
+test simple_transfer ... ignored
+
+test result: ok. 0 passed; 0 failed; 5 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 21 tests
+test test_tokens_cache ... ok
+test utils_with_vectors::test_fee_packing ... ok
+test utils_with_vectors::test_formatting ... ok
+test utils_with_vectors::test_token_packing ... ok
+test wallet_tests::test_wallet_account_id ... ok
+test primitives_with_vectors::test_signature ... ok
+test wallet_tests::test_wallet_address ... ok
+test wallet_tests::test_wallet_account_info ... ok
+test wallet_tests::test_wallet_ethereum ... ok
+test wallet_tests::test_wallet_get_balance_committed_not_existent ... ok
+test wallet_tests::test_wallet_get_balance_committed ... ok
+test signatures_with_vectors::test_mint_nft_signature ... ok
+test signatures_with_vectors::test_withdraw_nft_signature ... ok
+test wallet_tests::test_wallet_get_balance_verified_not_existent ... ok
+test wallet_tests::test_wallet_get_balance_verified ... ok
+test wallet_tests::test_wallet_refresh_tokens ... ok
+test wallet_tests::test_wallet_is_signing_key_set ... ok
+test signatures_with_vectors::test_forced_exit_signature ... ok
+test signatures_with_vectors::test_transfer_signature ... ok
+test signatures_with_vectors::test_change_pubkey_signature ... ok
+test signatures_with_vectors::test_withdraw_signature ... ok
+
+test result: ok. 21 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.03s
+
+
+running 39 tests
+test api_server::rest::forced_exit_requests::v01::tests::test_disabled_forced_exit_requests ... ignored
+test api_server::rest::forced_exit_requests::v01::tests::test_forced_exit_requests_get_fee ... ignored
+test api_server::rest::forced_exit_requests::v01::tests::test_forced_exit_requests_submit ... ignored
+test api_server::rest::forced_exit_requests::v01::tests::test_forced_exit_requests_wrong_tokens_number ... ignored
+test api_server::rest::v02::account::tests::accounts_scope ... ignored
+test api_server::rest::v02::block::tests::blocks_scope ... ignored
+test api_server::rest::v02::config::tests::config_scope ... ignored
+test api_server::rest::v02::fee::tests::fee_scope ... ignored
+test api_server::rest::v02::status::tests::status_scope ... ignored
+test api_server::rest::v02::token::tests::tokens_scope ... ignored
+test api_server::rest::v02::transaction::tests::transactions_scope ... ignored
+test api_server::web3::tests::block_number ... ignored
+test api_server::web3::tests::create_logs ... ignored
+test api_server::web3::tests::erc20_calls ... ignored
+test api_server::web3::tests::erc721_calls ... ignored
+test api_server::web3::tests::get_balance ... ignored
+test api_server::web3::tests::get_block ... ignored
+test api_server::web3::tests::get_block_transaction_count ... ignored
+test api_server::web3::tests::get_logs ... ignored
+test api_server::web3::tests::get_transaction_by_hash ... ignored
+test api_server::web3::tests::get_transaction_receipt ... ignored
+test api_server::web3::tests::ipfs_cid ... ignored
+test api_server::web3::tests::static_methods ... ignored
+test api_server::tx_sender::tests::test_scaling_user_fee_by_two ... ok
+test api_server::tx_sender::tests::test_scaling_user_fee_by_one_cent ... ok
+test api_server::tx_sender::tests::test_scaling_user_fee_by_5_percent ... ok
+test api_server::rpc_server::ip_insert_middleware::tests::insert_ip_incorrect_call_test ... ok
+test api_server::rpc_server::test::tx_fee_type_serialization ... ok
+test api_server::rpc_server::ip_insert_middleware::tests::insert_ip_test ... ok
+test api_server::rpc_server::ip_insert_middleware::tests::prevent_user_from_overriding_metadata ... ok
+test fee_ticker::ticker_api::coinmarkercap::test::parse_coinmarket_cap_responce ... ok
+test eth_checker::tests::actual_data_check ... ok
+test fee_ticker::tests::test_zero_price_token_fee ... ok
+test fee_ticker::validator::tests::check_tokens ... ok
+test fee_ticker::tests::test_ticker_subsidy ... ok
+test fee_ticker::ticker_api::coinmarkercap::test::test_fetch_coinmarketcap_data ... ok
+test fee_ticker::ticker_api::coingecko::tests::test_coingecko_api ... ok
+test eth_checker::tests::test_eip1271 ... ok
+test fee_ticker::tests::test_ticker_formula ... ok
+
+test result: ok. 16 passed; 0 failed; 23 ignored; 0 measured; 0 filtered out; finished in 0.19s
+
+
+running 2 tests
+test tests::get_volume_for_blacklisted ... ok
+test tests::get_volume_for_whitelisted ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 1 test
+test tests::load_balance ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 76 tests
+test exit_circuit::test::test_zksync_exit_circuit_correct_proof ... ignored
+test exit_circuit::test::test_zksync_exit_circuit_nft_token_correct_proof ... ignored
+test witness::tests::change_pubkey_offchain::test_change_pubkey_offchain_nonzero_fee ... ignored
+test witness::tests::change_pubkey_offchain::test_change_pubkey_offchain_old_signature_success ... ignored
+test witness::tests::change_pubkey_offchain::test_change_pubkey_offchain_success ... ignored
+test witness::tests::change_pubkey_offchain::test_incorrect_change_pubkey_account ... ignored
+test witness::tests::change_pubkey_offchain::test_incorrect_change_pubkey_signature ... ignored
+test witness::tests::composite_test ... ignored
+test witness::tests::corrupted_first_operation ... ignored
+test witness::tests::corrupted_intermediate_operation ... ignored
+test witness::tests::corrupted_last_operation ... ignored
+test witness::tests::corrupted_validator_audit_path ... ignored
+test witness::tests::deposit::test_deposit_existing_account ... ignored
+test witness::tests::deposit::test_deposit_in_empty_leaf ... ignored
+test witness::tests::deposit::test_deposit_zero_address ... ignored
+test witness::tests::deposit::test_incorrect_deposit_address ... ignored
+test witness::tests::forced_exit::corrupted_ops_input ... ignored
+test witness::tests::forced_exit::test_forced_exit_old_signature_success ... ignored
+test witness::tests::forced_exit::test_forced_exit_success ... ignored
+test witness::tests::forced_exit::test_incorrect_target ... ignored
+test witness::tests::forced_exit::test_not_enough_balance ... ignored
+test witness::tests::forced_exit::test_not_enough_fees ... ignored
+test witness::tests::forced_exit::test_not_exact_withdrawal_amount ... ignored
+test witness::tests::forced_exit::test_target_has_key_set ... ignored
+test witness::tests::full_exit::test_full_exit_failure_no_account_in_tree ... ignored
+test witness::tests::full_exit::test_full_exit_initialted_from_wrong_account_owner ... ignored
+test witness::tests::full_exit::test_full_exit_nft_success ... ignored
+test witness::tests::full_exit::test_full_exit_nft_with_incorrect_content_hash ... ignored
+test witness::tests::full_exit::test_full_exit_nft_with_incorrect_creator_address ... ignored
+test witness::tests::full_exit::test_full_exit_success ... ignored
+test witness::tests::full_exit::test_incorrect_full_exit_withdraw_amount ... ignored
+test witness::tests::mint_nft::test_mint_nft_all_nft_slots_filled ... ignored
+test witness::tests::mint_nft::test_mint_nft_corrupted_ops_input ... ignored
+test witness::tests::mint_nft::test_mint_nft_incorrect_fee ... ignored
+test witness::tests::mint_nft::test_mint_nft_incorrect_new_token_id ... ignored
+test witness::tests::mint_nft::test_mint_nft_incorrect_serial_id ... ignored
+test witness::tests::mint_nft::test_mint_nft_success ... ignored
+test witness::tests::noop::incorrect_circuit_pubdata ... ignored
+test witness::tests::noop::test_noop ... ignored
+test witness::tests::swap::test_self_swap ... ignored
+test witness::tests::swap::test_swap_corrupted_input ... ignored
+test witness::tests::swap::test_swap_failure ... ignored
+test witness::tests::swap::test_swap_incompatible_orders ... ignored
+test witness::tests::swap::test_swap_limit_orders ... ignored
+test witness::tests::swap::test_swap_sign_and_submit ... ignored
+test witness::tests::swap::test_swap_success ... ignored
+test witness::tests::transfer::corrupted_ops_input ... ignored
+test witness::tests::transfer::test_incorrect_transfer_account_from ... ignored
+test witness::tests::transfer::test_incorrect_transfer_account_to ... ignored
+test witness::tests::transfer::test_incorrect_transfer_amount ... ignored
+test witness::tests::transfer::test_incorrect_transfer_timestamp ... ignored
+test witness::tests::transfer::test_transfer_old_signature_success ... ignored
+test witness::tests::transfer::test_transfer_replay ... ignored
+test witness::tests::transfer::test_transfer_success ... ignored
+test witness::tests::transfer::test_transfer_to_self ... ignored
+test witness::tests::transfer::test_transfer_to_self_max_token_id ... ignored
+test witness::tests::transfer::test_transfer_with_nft_storage_account_id ... ignored
+test witness::tests::transfer::test_transfer_with_nft_token_id_as_a_token_to_process ... ignored
+test witness::tests::transfer_to_new::corrupted_ops_input ... ignored
+test witness::tests::transfer_to_new::test_incorrect_transfer_account_from ... ignored
+test witness::tests::transfer_to_new::test_incorrect_transfer_account_to ... ignored
+test witness::tests::transfer_to_new::test_incorrect_transfer_amount ... ignored
+test witness::tests::transfer_to_new::test_incorrect_transfer_to_new_timestamp ... ignored
+test witness::tests::transfer_to_new::test_transfer_replay ... ignored
+test witness::tests::transfer_to_new::test_transfer_to_new_success ... ignored
+test witness::tests::withdraw::corrupted_ops_input ... ignored
+test witness::tests::withdraw::test_incorrect_withdraw_account_from ... ignored
+test witness::tests::withdraw::test_incorrect_withdraw_amount ... ignored
+test witness::tests::withdraw::test_withdraw ... ignored
+test witness::tests::withdraw::test_withdraw_old_signature ... ignored
+test witness::tests::withdraw::test_withdraw_replay ... ignored
+test witness::tests::withdraw_nft::test_mint_and_withdraw_nft ... ignored
+test witness::tests::withdraw_nft::test_withdraw_nft_corrupted_ops_input ... ignored
+test witness::tests::withdraw_nft::test_withdraw_nft_with_incorrect_content_hash ... ignored
+test witness::tests::withdraw_nft::test_withdraw_nft_with_incorrect_serial_id ... ignored
+test witness::tests::withdraw_nft::test_withdraw_nft_with_zero_balance ... ignored
+
+test result: ok. 0 passed; 0 failed; 76 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 21 tests
+test configs::api::tests::methods ... ok
+test configs::chain::tests::methods ... ok
+test configs::eth_sender::tests::methods ... ok
+test configs::eth_watch::tests::from_env ... ok
+test configs::database::tests::from_env ... ok
+test configs::eth_watch::tests::methods ... ok
+test configs::eth_client::tests::from_env ... ok
+test configs::event_listener::tests::test_bind_addr ... ok
+test configs::event_listener::tests::from_env ... ok
+test configs::dev_liquidity_token_watcher::tests::from_env ... ok
+test configs::contracts::tests::from_env ... ok
+test configs::chain::tests::from_env ... ok
+test configs::prover::tests::methods ... ok
+test configs::ticker::tests::methods ... ok
+test configs::eth_sender::tests::from_env ... ok
+test configs::gateway_watcher::tests::from_env ... ok
+test configs::token_handler::tests::from_env ... ok
+test configs::misc::tests::from_env ... ok
+test configs::ticker::tests::from_env ... ok
+test configs::api::tests::from_env ... ok
+test configs::prover::tests::from_env ... ok
+
+test result: ok. 21 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 43 tests
+test state_keeper::root_hash_calculator::queue::tests::queue_functionality ... ok
+test eth_watch::tests::test_operation_queues_time_lag ... ok
+test eth_watch::tests::test_restore_and_poll ... ok
+test eth_watch::tests::test_restore_and_poll_time_lag ... ok
+test eth_watch::tests::test_serial_id_gaps ... ok
+test eth_watch::tests::test_operation_queues ... ok
+test state_keeper::root_hash_calculator::queue::tests::queue_notifications ... ok
+test state_keeper::pending_block::tests::basic_properties ... ok
+test state_keeper::state_restore::tests::tree_restore::cached_state_restore_last_block has been running for over 60 seconds
+test state_keeper::state_restore::tests::tree_restore::cached_state_restore_previous_block has been running for over 60 seconds
+test state_keeper::state_restore::tests::tree_restore::no_cache_restore has been running for over 60 seconds
+test state_keeper::state_restore::tests::tree_restore::no_cache_wrong_root has been running for over 60 seconds
+test state_keeper::state_restore::tests::tree_restore::no_cache_wrong_root_previous has been running for over 60 seconds
+test state_keeper::state_restore::tests::tree_restore::verified_state_wrong_root has been running for over 60 seconds
+test state_keeper::state_restore::tests::tree_restore::with_cache_wrong_root_previous has been running for over 60 seconds
+test state_keeper::state_restore::tests::tree_restore::wrong_cache has been running for over 60 seconds
+test state_keeper::state_restore::tests::tree_restore::cached_state_restore_last_block ... ok
+test state_keeper::state_restore::tests::tree_restore::wrong_cache - should panic ... ok
+test state_keeper::tests::apply_priority_op::not_enough_chunks ... ok
+test state_keeper::tests::apply_priority_op::success ... ok
+test state_keeper::tests::apply_tx::fast_withdrawal ... ok
+test state_keeper::tests::apply_tx::failure ... ok
+test state_keeper::tests::apply_tx::not_enough_chunks ... ok
+test state_keeper::tests::apply_tx::success ... ok
+test state_keeper::state_restore::tests::tree_restore::no_cache_restore ... ok
+test state_keeper::state_restore::tests::tree_restore::no_cache_wrong_root_previous - should panic ... ok
+test state_keeper::state_restore::tests::tree_restore::verified_state_wrong_root - should panic ... ok
+test state_keeper::tests::execute_proposed_block::fast_withdrawal ... ok
+test state_keeper::state_restore::tests::tree_restore::with_cache_wrong_root_previous - should panic ... ok
+test state_keeper::state_restore::tests::tree_restore::cached_state_restore_previous_block ... ok
+test state_keeper::tests::execute_proposed_block::chunks_to_fit_three_transfers_1_1_2_1 ... ok
+test state_keeper::tests::execute_proposed_block::chunks_to_fit_three_transfers_2_2_1 ... ok
+test state_keeper::tests::execute_proposed_block::few_chunks ... ok
+test state_keeper::tests::execute_proposed_block::few_iterations ... ok
+test state_keeper::tests::execute_proposed_block::transfers_with_different_timestamps ... ok
+test state_keeper::tests::execute_proposed_block::just_enough_chunks ... ok
+test state_keeper::tests::execute_proposed_block::small ... ok
+test state_keeper::tests::execute_proposed_block::pending_block_diff ... ok
+test state_keeper::tests::execute_proposed_block::pending_block_updates ... ok
+test state_keeper::tests::pending_block::seal_pending_block ... ok
+test state_keeper::state_restore::tests::tree_restore::no_cache_wrong_root - should panic ... ok
+test state_keeper::types::tests::config_chunks_empty - should panic ... ok
+test state_keeper::types::tests::config_chunks_out_of_order - should panic ... ok
+test state_keeper::types::tests::create_config ... ok
+test state_keeper::tests::gas_limit::gas_count_change ... ok
+test state_keeper::tests::pending_block::store_pending_block ... ok
+test state_keeper::tests::test_create_incorrect_state_keeper - should panic ... ok
+test state_keeper::tests::pending_block::correctly_restore_pending_block_timestamp ... ok
+test state_keeper::tests::gas_limit::gas_limit_reached ... ok
+test state_keeper::tests::gas_limit::batch_gas_limit ... ok
+test state_keeper::tests::gas_limit::gas_limit_sealing ... ok
+
+test result: ok. 43 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 164.86s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 20 tests
+test convert::tests::fe_bytes_roundtrip ... ok
+test convert::tests::fe_hex_roundtrip ... ok
+test merkle_tree::parallel_smt::tests::test_merkle_tree_insert ... ok
+test merkle_tree::parallel_smt::tests::merkle_tree_workflow ... ok
+test primitives::test::test_bit_iterator_e ... ok
+test primitives::test::test_bits_conversions ... ok
+test merkle_tree::parallel_smt::tests::merkle_path_test ... ok
+test primitives::test::test_float_conversions ... ok
+test primitives::test::test_get_bits ... ok
+test primitives::test::test_uint_from_bytes ... ok
+test serialization::tests::test_fr_serialize ... ok
+test serialization::tests::test_optional_fr_serialize ... ok
+test serialization::tests::test_vec_optional_fr_serialize ... ok
+test primitives::test::test_rescue_hash_tx_msg ... ok
+test merkle_tree::rescue_hasher::test_resue_hash ... ok
+test merkle_tree::tests::simulate_transfer_to_new ... ok
+test merkle_tree::tests::small_input_and_leftmost_leaf ... ok
+test merkle_tree::tests::small_input_and_middle_leaf ... ok
+test merkle_tree::tests::big_test ... ok
+test merkle_tree::tests::test_verify_proof ... ok
+
+test result: ok. 20 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 15.60s
+
+
+running 14 tests
+test contract::default::test::test_deposit ... ok
+test contract::default::test::test_failed_full_exit ... ok
+test contract::default::test::test_successfull_full_exit ... ok
+test tests::test_run_state_update ... ignored
+test tests::test_with_inmemory_storage ... ignored
+test contract::v4::test::test_decode_commitment ... ok
+test events_state::test::event_state ... ok
+test contract::default::test::test_close ... ok
+test contract::default::test::test_transfer ... ok
+test contract::default::test::test_change_pubkey_offchain ... ok
+test contract::default::test::test_transfer_to_new ... ok
+test contract::default::test::test_part_exit ... ok
+test tree_state::test::test_update_tree_with_multiple_txs_per_block ... ok
+test tree_state::test::test_update_tree_with_one_tx_per_block ... ok
+
+test result: ok. 12 passed; 0 failed; 2 ignored; 0 measured; 0 filtered out; finished in 9.34s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 21 tests
+test gas_adjuster::tests::gas_price_limit_average_basis ... ignored
+test gas_adjuster::tests::initial_upper_gas_limit ... ok
+test gas_adjuster::tests::gas_price_limit_restore ... ok
+test tests::basic_test ... ok
+test gas_adjuster::tests::lower_gas_limit ... ok
+test gas_adjuster::tests::initial_price ... ok
+test tests::deadline_block ... ok
+test gas_adjuster::tests::gas_price_limit_preservation ... ok
+test tests::confirmations_independence ... ok
+test tests::stuck_transaction ... ok
+test tests::transaction_state ... ok
+test tx_queue::operation_queue::tests::basic_operations ... ok
+test tx_queue::tests::basic_operations ... ok
+test tests::operation_commitment_workflow ... ok
+test gas_adjuster::tests::average_gas_price_stored_correctly ... ok
+test tests::transaction_failure - should panic ... ok
+test tx_queue::tests::return_popped_empty - should panic ... ok
+test tests::restore_state ... ok
+test tests::operations_order ... ok
+test tests::concurrent_operations_order ... ok
+test gas_adjuster::tests::gas_price_limit_scaling ... ok
+
+test result: ok. 20 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 1.02s
+
+
+running 2 tests
+test pk_signer::test::test_generating_signature ... ok
+test json_rpc_signer::tests::run_client ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+
+running 5 tests
+test subscriber::filters::block::tests::test_block_filter ... ok
+test subscriber::filters::account::tests::test_account_filter ... ok
+test subscriber::filters::transaction::tests::test_transaction_filter ... ok
+test subscriber::filters::tests::test_subscriber_filters ... ok
+test subscriber::filters::tests::test_filters_deserialize ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 5 tests
+test utils::test::test_extract_id_from_amount ... ok
+test eth_watch::test::test_watcher_processing_requests ... ok
+test eth_watch::test::test_watcher_deleting_old_requests ... ok
+test eth_watch::test::test_watcher_restore_state ... ok
+test forced_exit_sender::test::test_forced_exit_sender ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.03s
+
+
+running 3 tests
+test multiplexed_gateway_watcher::tests::test_same_depth_block_hash_check ... ok
+test multiplexed_gateway_watcher::tests::test_block_incorrect_depth_check ... ok
+test multiplexed_gateway_watcher::tests::test_different_depth_block_hash_check ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 2 tests
+test mempool_transactions_queue::tests::test_priority_queue ... ok
+test mempool_transactions_queue::tests::test_mempool_transactions_queue ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.75s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 2 tests
+test tests::calculate_volume ... ok
+test tests::test_get_volumes ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.92s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 3 tests
+test test_shutdown_request ... ok
+test test_receiving_heartbeats ... ok
+test test_publishing_proof ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 13.24s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 65 tests
+test state::tests::insert_account_with_bigger_id ... ignored
+test state::tests::from_tree_with_gaps ... ok
+test state::tests::apply_account_updates_success ... ok
+test state::tests::delete_unexisting_account - should panic ... ok
+test state::tests::mismatched_nonce - should panic ... ok
+test state::tests::create_two_accounts_with_same_addresses - should panic ... ok
+test state::tests::mismatched_old_balance - should panic ... ok
+test state::tests::remove_not_last_account - should panic ... ok
+test state::tests::test_from_acc_map ... ok
+test state::tests::test_next_free_id ... ok
+test tests::collect_fee::invalid_account - should panic ... ok
+test state::tests::plasma_state_reversing_updates ... ok
+test tests::operations::close::expected_fail ... ok
+test tests::operations::change_pub_key::nonce_mismatch ... ok
+test tests::operations::change_pub_key::invalid_account_id ... ok
+test tests::operations::forced_exit::insufficient_funds ... ok
+test tests::collect_fee::success ... ok
+test tests::operations::forced_exit::nonce_mismatch ... ok
+test tests::operations::forced_exit::invalid_account_id ... ok
+test tests::operations::mint_nft::mint_already_created_nft ... ok
+test tests::operations::forced_exit::unlocked_target ... ok
+test tests::operations::change_pub_key::success ... ok
+test tests::operations::mint_nft::nonce_mismatched ... ok
+test state::tests::execute_txs_batch_success ... ok
+test state::tests::execute_txs_batch_fail_transfers ... ok
+test state::tests::execute_txs_batch_fail ... ok
+test tests::operations::priority_ops::full_exit_non_existent ... ok
+test tests::operations::forced_exit::success ... ok
+test tests::operations::swap::equal_tokens ... ok
+test tests::operations::priority_ops::deposit_to_existing ... ok
+test tests::operations::priority_ops::deposit_to_new ... ok
+test tests::operations::priority_ops::full_exit_success ... ok
+test tests::operations::swap::not_enough_balance ... ok
+test tests::operations::mint_nft::mint_token_to_new_account ... ok
+test tests::operations::swap::default_recipients ... ok
+test tests::operations::swap::self_swap ... ok
+test tests::operations::swap::wrong_prices ... ok
+test tests::operations::swap::limit_orders ... ok
+test tests::operations::swap::pay_fee_with_received ... ok
+test tests::operations::transfer::insufficient_funds ... ok
+test tests::operations::transfer::invalid_account_id ... ok
+test tests::operations::transfer::nonce_mismatch ... ok
+test tests::operations::transfer::to_new_failure ... ok
+test tests::operations::swap::not_exact_prices ... ok
+test tests::operations::swap::regular_swap ... ok
+test tests::operations::mint_nft::mint_success ... ok
+test tests::operations::withdraw::insufficient_funds ... ok
+test tests::operations::withdraw::nonce_mismatch ... ok
+test tests::operations::withdraw::invalid_account_id ... ok
+test tests::operations::transfer::to_existing ... ok
+test tests::operations::transfer::to_new ... ok
+test tests::operations::withdraw_nft::invalid_account_id ... ok
+test tests::operations::withdraw_nft::insufficient_funds ... ok
+test tests::operations::withdraw_nft::nft_does_not_exists ... ok
+test tests::operations::withdraw_nft::no_nft_on_balance ... ok
+test tests::operations::transfer::to_self ... ok
+test tests::operations::withdraw_nft::nonce_mismatch ... ok
+test tests::operations::swap::sign_and_submit ... ok
+test tests::timestamp::invalid_timestamp_valid_from ... ok
+test tests::operations::transfer::execute_txs_batch_success_transfers ... ok
+test tests::operations::withdraw::success ... ok
+test tests::timestamp::invalid_timestamp_valid_until ... ok
+test tests::operations::withdraw_nft::success ... ok
+test tests::test_tree_state ... ok
+test tests::timestamp::batch_invalid_timestamp ... ok
+
+test result: ok. 64 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 35.66s
+
+
+running 76 tests
+test listener::test::test_listen_notify ... ignored
+test tests::chain::accounts::eth_account_type ... ignored
+test tests::chain::accounts::stored_accounts ... ignored
+test tests::chain::accounts::test_get_account_nft_balance ... ignored
+test tests::chain::accounts::test_get_balance ... ignored
+test tests::chain::accounts::test_get_nft_owner ... ignored
+test tests::chain::block::pending_block_workflow ... ignored
+test tests::chain::block::test_block_page ... ignored
+test tests::chain::block::test_commit_rewind ... ignored
+test tests::chain::block::test_find_block_by_height_or_hash ... ignored
+test tests::chain::block::test_get_block_number_by_hash ... ignored
+test tests::chain::block::test_get_block_transactions_hashes ... ignored
+test tests::chain::block::test_get_block_transactions_page ... ignored
+test tests::chain::block::test_incomplete_block_logic ... ignored
+test tests::chain::block::test_is_block_finalized ... ignored
+test tests::chain::block::test_operations_counter ... ignored
+test tests::chain::block::test_remove_blocks ... ignored
+test tests::chain::block::test_remove_new_account_tree_cache ... ignored
+test tests::chain::block::test_remove_old_account_tree_cache ... ignored
+test tests::chain::block::test_remove_pending_block ... ignored
+test tests::chain::block::unconfirmed_transaction ... ignored
+test tests::chain::mempool::collect_garbage ... ignored
+test tests::chain::mempool::contains_and_get_tx ... ignored
+test tests::chain::mempool::remove_txs ... ignored
+test tests::chain::mempool::store_load ... ignored
+test tests::chain::mempool::store_load_batch ... ignored
+test tests::chain::mempool::test_get_batch_info_from_mempool ... ignored
+test tests::chain::mempool::test_return_executed_txs_to_mempool ... ignored
+test tests::chain::operations::aggregated_operations ... ignored
+test tests::chain::operations::duplicated_operations ... ignored
+test tests::chain::operations::executed_operations ... ignored
+test tests::chain::operations::executed_priority_operations ... ignored
+test tests::chain::operations::priority_ops_hashes ... ignored
+test tests::chain::operations::remove_rejected_transactions ... ignored
+test tests::chain::operations::test_remove_eth_unprocessed_aggregated_ops ... ignored
+test tests::chain::operations::test_remove_executed_priority_operations ... ignored
+test tests::chain::operations::transaction_resent ... ignored
+test tests::chain::operations_ext::account_last_tx_hash ... ignored
+test tests::chain::operations_ext::account_transactions_count ... ignored
+test tests::chain::operations_ext::block_last_tx_hash ... ignored
+test tests::chain::operations_ext::get_account_transactions ... ignored
+test tests::chain::operations_ext::get_account_transactions_history ... ignored
+test tests::chain::operations_ext::get_account_transactions_history_from ... ignored
+test tests::chain::operations_ext::get_batch_info ... ignored
+test tests::chain::operations_ext::get_tx_sequnecner_id ... ignored
+test tests::chain::operations_ext::test_getting_swap_for_acc ... ignored
+test tests::chain::operations_ext::tx_data ... ignored
+test tests::chain::operations_ext::tx_data_for_web3 ... ignored
+test tests::chain::operations_ext::tx_receipt ... ignored
+test tests::chain::operations_ext::web3_receipts ... ignored
+test tests::chain::state::low_level_commit_verify_state ... ignored
+test tests::chain::state::state_diff ... ignored
+test tests::chain::state::test_get_mint_nft_update ... ignored
+test tests::chain::state::test_remove_account_updates ... ignored
+test tests::config::test_load_config ... ignored
+test tests::data_restore::last_watched_block ... ignored
+test tests::ethereum::ethereum_empty_load ... ignored
+test tests::ethereum::ethereum_gas_update ... ignored
+test tests::ethereum::ethereum_storage ... ignored
+test tests::ethereum::ethereum_unprocessed ... ignored
+test tests::ethereum::test_update_eth_parameters ... ignored
+test tests::event::test_account_events ... ignored
+test tests::event::test_block_events ... ignored
+test tests::forced_exit_requests::delete_old_requests ... ignored
+test tests::forced_exit_requests::get_oldest_unfulfilled_request ... ignored
+test tests::misc::stored_subsidy ... ignored
+test tests::prover::test_prover_job_queue ... ignored
+test tests::prover::test_remove_proofs ... ignored
+test tests::prover::test_remove_prover_jobs ... ignored
+test tests::prover::test_remove_witnesses ... ignored
+test tests::prover::test_store_witness ... ignored
+test tests::tokens::test_market_volume ... ignored
+test tests::tokens::test_nfts_with_factories ... ignored
+test tests::tokens::test_ticker_price ... ignored
+test tests::tokens::tokens_storage ... ignored
+test utils::test::address_store_roundtrip ... ok
+
+test result: ok. 1 passed; 0 failed; 75 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 62 tests
+test account::test::is_default_account ... ok
+test account::test::is_deeply_equal_account ... ok
+test account::test::test_account_updates ... ok
+test helpers::test::detect_unpackable ... ok
+test helpers::test::test_roundtrip ... ok
+test helpers::test::pack_to_closest_packable ... ok
+test helpers::test::token_like_serialization ... ok
+test priority_ops::tests::backward_compatibility::empty_vector_deserialized_into_zero_hash ... ok
+test priority_ops::tests::backward_compatibility::new_roundtrip_unchanged ... ok
+test priority_ops::tests::backward_compatibility::old_deserializes_to_new ... ok
+test priority_ops::tests::backward_compatibility::old_serializes_the_same_as_new ... ok
+test priority_ops::tests::backward_compatibility::short_vector_deserialization_padding ... ok
+test priority_ops::tests::backward_compatibility::big_vector_cannot_be_deserialized - should panic ... ok
+test tests::block::test_get_eth_encoded_root ... ok
+test account::test::test_default_account ... ok
+test account::test::test_account_update ... ok
+test tests::block::test_get_withdrawals_data ... ok
+test tests::block::test_get_eth_public_data ... ok
+test gas_counter::tests::gas_counter ... ok
+test tests::block::test_get_eth_witness_data ... ok
+test tests::hardcoded::operations_test::test_public_data_conversions_deposit ... ok
+test tests::hardcoded::operations_test::test_public_data_conversions_full_exit ... ok
+test operations::withdraw_nft_op::tests::public_data ... ok
+test tests::hardcoded::operations_test::test_public_data_conversions_noop ... ok
+test operations::mint_nft_op::tests::public_data ... ok
+test tests::hardcoded::operations_test::test_public_data_conversions_forced_exit ... ok
+test tests::hardcoded::operations_test::test_public_data_conversions_mint_nft ... ok
+test tests::hardcoded::operations_test::test_public_data_conversions_change_pubkey ... ok
+test tests::hardcoded::operations_test::test_eth_witness ... ok
+test tests::hardcoded::test_priority_op_from_valid_logs ... ignored
+test tests::hardcoded::operations_test::test_public_data_conversions_transfer ... ok
+test tests::hardcoded::operations_test::test_public_data_conversions_withdraw ... ok
+test tests::hardcoded::operations_test::test_public_data_conversions_withdraw_nft ... ok
+test tests::hardcoded::tx_conversion_test::test_convert_to_bytes_forced_exit ... ok
+test tests::hardcoded::tx_conversion_test::test_convert_to_bytes_change_pubkey ... ok
+test gas_counter::tests::commit_and_verify_cost ... ok
+test tests::hardcoded::tx_conversion_test::test_convert_to_bytes_mint_nft ... ok
+test tests::hardcoded::operations_test::test_withdrawal_data ... ok
+test tests::hardcoded::operations_test::test_public_data_conversions_swap ... ok
+test tests::hardcoded::tx_conversion_test::test_convert_to_bytes_transfer ... ok
+test tokens::tests::token_like_is_eth ... ok
+test tokens::tests::token_like_to_case_insensitive ... ok
+test tokens::tests::tx_fee_type_deserialize ... ok
+test tokens::tests::tx_fee_type_deserialize_old_type ... ok
+test tx::primitives::tests::test_empty_batch ... ok
+test tests::hardcoded::tx_conversion_test::test_convert_to_bytes_withdraw ... ok
+test tests::hardcoded::tx_conversion_test::test_convert_to_bytes_withdraw_nft ... ok
+test tests::block::no_supported_block_size - should panic ... ok
+test tests::hardcoded::tx_conversion_test::test_convert_to_bytes_swap ... ok
+test tx::primitives::tests::test_batch_message ... ok
+test tx::tests::test_ethereum_signature_verify_with_serialization ... ok
+test tx::tests::test_ethereum_signature_verify_examples ... ok
+test tx::tests::eth_sign_data_compatibility ... ok
+test tx::tests::test_ethereum_signature_sign ... ok
+test tx::tests::test_check_signature ... ok
+test tx::tests::test_print_mint_nft_for_protocol ... ok
+test tx::tests::test_print_withdraw_nft_for_protocol ... ok
+test tx::tests::test_print_withdraw_for_protocol ... ok
+test tx::tests::test_print_change_pub_key_for_protocol ... ok
+test tx::tests::test_print_transfer_for_protocol ... ok
+test tx::tests::test_musig_rescue_signing_verification ... ok
+test tx::tests::test_print_swap_for_protocol ... ok
+
+test result: ok. 61 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 2.66s
+
+
+running 10 tests
+test env_tools::test::test_env_tools ... ok
+test convert::test::test_ratio_to_big_decimal ... ok
+test serde_wrappers::test::test_serde_big_uint_pair ... ok
+test convert::test::test_big_decimal_to_ratio ... ok
+test convert::test::test_round_precision ... ok
+test serde_wrappers::test::test_ratio_serialize_as_decimal ... ok
+test serde_wrappers::test::test_serde_big_uint_wrapper ... ok
+test format::test::test_format_units ... ok
+test macros::tests::resolves_after_timeout ... ok
+test macros::tests::retries_given_fut ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.12s
+
+
+running 2 tests
+test tests::prover_server::test_api_client ... ignored
+test witness_generator::tests::test_next_witness_block ... ok
+
+test result: ok. 1 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 4 tests
+test src/serialization.rs - serialization::VecOptionalFrSerde (line 111) ... ok
+test src/serialization.rs - serialization::FrSerde (line 27) ... ok
+test src/serialization.rs - serialization::OptionalFrSerde (line 69) ... ok
+test src/serialization.rs - serialization::VecFrSerde (line 159) ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.97s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 2 tests
+test src/account/pubkey_hash.rs - account::pubkey_hash::PubKeyHash::as_hex (line 46) ... ok
+test src/account/pubkey_hash.rs - account::pubkey_hash::PubKeyHash::from_hex (line 62) ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.79s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
